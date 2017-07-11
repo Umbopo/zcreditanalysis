@@ -1,0 +1,20 @@
+{
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/ZFI_CREDIT_ANALYSIS_SRV/",
+    "metadataFilePath": "localService/ZFI_CREDIT_ANALYSIS_SRV/metadata.xml",
+    "loadJSONFiles": true,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "deploy": {
+    "destination": "FFD4SAPPI",
+    "name": "ZCREDITANALYSIS"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  }
+}

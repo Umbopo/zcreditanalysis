@@ -1,0 +1,56 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.page_1" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <m:Page showHeader="false" title="Customer Trading History" showFooter="true" showNavButton="false" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <form:Form id="page1" width="auto" visible="true">
+                <form:formContainers>
+                    <form:FormContainer visible="true">
+                        <form:formElements>
+                            <form:FormElement visible="true">
+                                <form:fields>
+                                    <m:Input type="Text" description="" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="true" maxLength="10"/>
+                                </form:fields>
+                                <form:label>
+                                    <m:Label text="Customer" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="LTR"/>
+                                </form:label>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:fields>
+                                    <m:Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="4"/>
+                                </form:fields>
+                                <form:label>
+                                    <m:Label text="Company Code" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="LTR"/>
+                                </form:label>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:fields>
+                                    <m:DatePicker enabled="true" visible="true" width="auto" displayFormat="MMM dd, yyyy"/>
+                                </form:fields>
+                                <form:label>
+                                    <m:Label text="Start Date" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="LTR"/>
+                                </form:label>
+                            </form:FormElement>
+                        </form:formElements>
+                    </form:FormContainer>
+                </form:formContainers>
+                <form:layout>
+                    <form:ResponsiveGridLayout columnsM="1" columnsL="2" emptySpanL="0" emptySpanM="0" emptySpanS="0" visible="true" labelSpanS="12" labelSpanM="2" labelSpanL="4"/>
+                </form:layout>
+                <form:title>
+                    <core:Title text="Customer Trading History" level="Auto" textAlign="centre"/>
+                </form:title>
+            </form:Form>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Footer">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Continue" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

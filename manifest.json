@@ -1,0 +1,162 @@
+{
+	"_version": "1.1.0",
+	"start_url": "webapp/index.html",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "generate.app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"ZFI_CREDIT_ANALYSIS_SRV": {
+				"uri": "/sap/opu/odata/sap/ZFI_CREDIT_ANALYSIS_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZFI_CREDIT_ANALYSIS_SRV/metadata.xml",
+					"annotations": ["annotation0"]
+				}
+			},
+			"annotation0": {
+				"type": "ODataAnnotation",
+				"uri": "annotation0.xml",
+				"settings": {
+					"localUri": "annotation0.xml"
+				}
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.2.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": []
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "generated.app.viewpage_1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.32.0",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "ZFI_CREDIT_ANALYSIS_SRV",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"loadMetadataAsync": false,
+					"json": true,
+					"bJSON": true,
+					"defaultBindingMode": "TwoWay",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"disableHeadRequestForToken": true,
+					"defaultOperationMode": "Auto"
+				},
+				"preload": true
+			},
+			"CreditAnalysis": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneTime",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZFI_CREDIT_ANALYSIS_SRV",
+				"preload": true
+			},
+			"@i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			}
+		},
+		"resources": {
+			"css": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "CreditAnalysis.view",
+				"controlId": "App-credit-controller",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassedPage": {
+					"target": ["page_1"]
+				}
+			},
+			"routes": [{
+				"pattern": "page_1/:context:",
+				"name": "page_1",
+				"target": ["page_1"]
+			}, {
+				"pattern": "page_2/:context:",
+				"name": "page_2",
+				"target": ["page_2"]
+			}, {
+				"pattern": "page_1/:context:",
+				"name": "page_1",
+				"target": ["page_1"]
+			}, {
+				"pattern": "page_2/:context:",
+				"name": "page_2",
+				"target": ["page_2"]
+			}],
+			"targets": {
+				"page_1": {
+					"controlAggregation": "pages",
+					"viewName": "page_1",
+					"viewId": "page_1",
+					"viewLevel": 1
+				},
+				"page_2": {
+					"controlAggregation": "pages",
+					"viewName": "page_2",
+					"viewId": "page_2",
+					"viewLevel": 1
+				}
+			}
+		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zcreditanalysis/webapp",
+		"_version": "1.1.0"
+	}
+}

@@ -1,0 +1,183 @@
+[{
+	"CompanyCode": "CompanyCode 1",
+	"Customer": "Customer 1",
+	"Period": 5602,
+	"Description": "Description 1",
+	"DateFrom": "/Date(1355140466000)/",
+	"DateTo": "/Date(1377345266000)/",
+	"ClrDocNo": "ClrDocNo 1",
+	"ClearDate": "/Date(1378554866000)/",
+	"DiscountPercentage": 3978.64,
+	"Discount": 380.37,
+	"Payments": 6288.93,
+	"Faedt": "/Date(1213617266000)/",
+	"CalcDays": 2240,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2012-12-10T11%3A54%3A26',ClrDocNo='ClrDocNo%201')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 2",
+	"Customer": "Customer 2",
+	"Period": 7772,
+	"Description": "Description 2",
+	"DateFrom": "/Date(1215258866000)/",
+	"DateTo": "/Date(1377258866000)/",
+	"ClrDocNo": "ClrDocNo 2",
+	"ClearDate": "/Date(1281095666000)/",
+	"DiscountPercentage": 9213.82,
+	"Discount": 1989.45,
+	"Payments": 5404.33,
+	"Faedt": "/Date(1240055666000)/",
+	"CalcDays": 2905,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2008-07-05T11%3A54%3A26',ClrDocNo='ClrDocNo%202')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 3",
+	"Customer": "Customer 3",
+	"Period": 186,
+	"Description": "Description 3",
+	"DateFrom": "/Date(1121342066000)/",
+	"DateTo": "/Date(1183118066000)/",
+	"ClrDocNo": "ClrDocNo 3",
+	"ClearDate": "/Date(1458215666000)/",
+	"DiscountPercentage": 1945.21,
+	"Discount": 301.92,
+	"Payments": 7331.47,
+	"Faedt": "/Date(1303386866000)/",
+	"CalcDays": 792,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2005-07-14T11%3A54%3A26',ClrDocNo='ClrDocNo%203')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 4",
+	"Customer": "Customer 4",
+	"Period": 7769,
+	"Description": "Description 4",
+	"DateFrom": "/Date(1336823666000)/",
+	"DateTo": "/Date(1332244466000)/",
+	"ClrDocNo": "ClrDocNo 4",
+	"ClearDate": "/Date(973857266000)/",
+	"DiscountPercentage": 5527.16,
+	"Discount": 1676.3,
+	"Payments": 6343.5,
+	"Faedt": "/Date(1493034866000)/",
+	"CalcDays": 4290,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2012-05-12T11%3A54%3A26',ClrDocNo='ClrDocNo%204')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 5",
+	"Customer": "Customer 5",
+	"Period": 6080,
+	"Description": "Description 5",
+	"DateFrom": "/Date(1575806066000)/",
+	"DateTo": "/Date(1467287666000)/",
+	"ClrDocNo": "ClrDocNo 5",
+	"ClearDate": "/Date(1379332466000)/",
+	"DiscountPercentage": 1254.6,
+	"Discount": 475.26,
+	"Payments": 822.05,
+	"Faedt": "/Date(1394193266000)/",
+	"CalcDays": 2475,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2019-12-08T11%3A54%3A26',ClrDocNo='ClrDocNo%205')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 6",
+	"Customer": "Customer 6",
+	"Period": 486,
+	"Description": "Description 6",
+	"DateFrom": "/Date(1357041266000)/",
+	"DateTo": "/Date(1281182066000)/",
+	"ClrDocNo": "ClrDocNo 6",
+	"ClearDate": "/Date(1423914866000)/",
+	"DiscountPercentage": 8403.85,
+	"Discount": 1286.08,
+	"Payments": 6024.77,
+	"Faedt": "/Date(1358596466000)/",
+	"CalcDays": 1037,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2013-01-01T11%3A54%3A26',ClrDocNo='ClrDocNo%206')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 7",
+	"Customer": "Customer 7",
+	"Period": 3960,
+	"Description": "Description 7",
+	"DateFrom": "/Date(1240833266000)/",
+	"DateTo": "/Date(1132833266000)/",
+	"ClrDocNo": "ClrDocNo 7",
+	"ClearDate": "/Date(1537962866000)/",
+	"DiscountPercentage": 1087.46,
+	"Discount": 6322.4,
+	"Payments": 4779.03,
+	"Faedt": "/Date(1227527666000)/",
+	"CalcDays": 4610,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2009-04-27T11%3A54%3A26',ClrDocNo='ClrDocNo%207')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 8",
+	"Customer": "Customer 8",
+	"Period": 1414,
+	"Description": "Description 8",
+	"DateFrom": "/Date(997876466000)/",
+	"DateTo": "/Date(1407930866000)/",
+	"ClrDocNo": "ClrDocNo 8",
+	"ClearDate": "/Date(1542801266000)/",
+	"DiscountPercentage": 7109.65,
+	"Discount": 8429.58,
+	"Payments": 1017.87,
+	"Faedt": "/Date(1409831666000)/",
+	"CalcDays": 1860,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2001-08-15T11%3A54%3A26',ClrDocNo='ClrDocNo%208')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 9",
+	"Customer": "Customer 9",
+	"Period": 898,
+	"Description": "Description 9",
+	"DateFrom": "/Date(1386503666000)/",
+	"DateTo": "/Date(1376049266000)/",
+	"ClrDocNo": "ClrDocNo 9",
+	"ClearDate": "/Date(1005393266000)/",
+	"DiscountPercentage": 8293.7,
+	"Discount": 8088.63,
+	"Payments": 1255.67,
+	"Faedt": "/Date(1075031666000)/",
+	"CalcDays": 4355,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2013-12-08T11%3A54%3A26',ClrDocNo='ClrDocNo%209')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+}, {
+	"CompanyCode": "CompanyCode 10",
+	"Customer": "Customer 10",
+	"Period": 6110,
+	"Description": "Description 10",
+	"DateFrom": "/Date(1404042866000)/",
+	"DateTo": "/Date(1175514866000)/",
+	"ClrDocNo": "ClrDocNo 10",
+	"ClearDate": "/Date(994593266000)/",
+	"DiscountPercentage": 8583.78,
+	"Discount": 5032.44,
+	"Payments": 2416.75,
+	"Faedt": "/Date(1474026866000)/",
+	"CalcDays": 9105,
+	"__metadata": {
+		"uri": "CUSTOMER_TRADING_HISTSet(DateFrom=datetime'2014-06-29T11%3A54%3A26',ClrDocNo='ClrDocNo%2010')",
+		"type": "ZFI_CREDIT_ANALYSIS_SRV.CUSTOMER_TRADING_HIST"
+	}
+
+}
+]

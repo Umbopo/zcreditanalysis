@@ -1,0 +1,49 @@
+{
+  "run": [
+    {
+      "filePath": "/Component.js",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 3300450,
+        "displayName": "Run Component.js",
+        "lastRunTimeStamp": 1499754782977
+      }
+    },
+    {
+      "filePath": "/test/testFLPServiceMockServer.html",
+      "previewMode": 0,
+      "dataMode": 0,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "1.38.5",
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": ""
+        }
+      ],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "FFD4SAPPI",
+          "destinations": "FFD4SAPPI"
+        }
+      ],
+      "_metadata": {
+        "id": 2624830,
+        "runnerId": "webapprunner",
+        "displayName": "Run testFLPServiceMockServer.html",
+        "lastRunTimeStamp": 1499753671102
+      }
+    }
+  ]
+}
