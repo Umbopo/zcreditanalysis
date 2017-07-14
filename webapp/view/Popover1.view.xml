@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.Popover1" xmlns:m="sap.m">
+    <m:Popover bounce="true" contentHeight="80px" contentWidth="auto" horizontalScrolling="true" modal="false" offsetX="0" offsetY="0" placement="Auto" showHeader="true" title="View Document" verticalScrolling="true" visible="true">
+        <m:content>
+            <m:Label text="Whould you like to view the document?" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+            <m:Button text="Confirm" type="Accept" icon="sap-icon://accept" iconFirst="true" width="50%" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+            <m:Button text="Cancel" type="Reject" icon="sap-icon://sys-cancel-2" iconFirst="true" width="50%" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress2"/>
+        </m:content>
+        <m:beginButton/>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:footer/>
+        <m:subHeader/>
+    </m:Popover>
+</mvc:View>

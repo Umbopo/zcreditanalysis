@@ -1,0 +1,201 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.page_2" xmlns:m="sap.m">
+    <m:Page showHeader="true" title="Customer Trading History" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <m:Panel height="auto" width="100%" headerText="Trading" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <m:ScrollContainer horizontal="true" vertical="true" width="100%" height="auto" visible="true">
+                        <m:content>
+                            <m:Table id="sap_Responsive_Page_0-content-sap_m_Panel-1499086666324-content-build_simple_Table-1499086737933" width="100%" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="false" items="{/T1Set}">
+                                <m:infoToolbar>
+                                    <m:Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                        <m:content>
+                                            <m:Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </m:content>
+                                    </m:Toolbar>
+                                </m:infoToolbar>
+                                <m:headerToolbar/>
+                                <m:columns>
+                                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <m:header>
+                                            <m:Text text="Period &amp;Period Description" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                        </m:header>
+                                        <m:footer/>
+                                    </m:Column>
+                                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <m:header>
+                                            <m:Text text="Clrng Doc." width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                        </m:header>
+                                        <m:footer/>
+                                    </m:Column>
+                                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <m:header>
+                                            <m:Text text="Sales Amount" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                        </m:header>
+                                        <m:footer/>
+                                    </m:Column>
+                                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <m:header>
+                                            <m:Text text="Payment Amount" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                        </m:header>
+                                        <m:footer/>
+                                    </m:Column>
+                                    <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                        <m:header>
+                                            <m:Text text="Days" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </m:header>
+                                        <m:footer/>
+                                    </m:Column>
+                                </m:columns>
+                                <m:items>
+                                    <m:ColumnListItem type="Active">
+                                        <m:cells>
+                                            <m:ObjectIdentifier title="" text="{PeriodDesc}" titleActive="false" visible="true"/>
+                                            <m:ObjectIdentifier title="{ClrngDoc}" text="" titleActive="false" visible="true"/>
+                                            <m:ObjectIdentifier title="{path: 'SalesAm', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" text="" titleActive="false" visible="true"/>
+                                            <m:ObjectIdentifier title="{path: 'PaymentA', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" text="" titleActive="false" visible="true"/>
+                                            <m:ObjectIdentifier title="{Days}" text="" titleActive="false" visible="true"/>
+                                        </m:cells>
+                                    </m:ColumnListItem>
+                                </m:items>
+                            </m:Table>
+                        </m:content>
+                    </m:ScrollContainer>
+                    <m:Panel height="auto" width="100%" headerText="Payments &amp; Dates" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                        <m:content>
+                            <m:ScrollContainer horizontal="true" vertical="true" width="100%" height="auto" visible="true">
+                                <m:content>
+                                    <m:Table id="sap_Responsive_Page_0-content-sap_m_Panel-1499086666324-content-sap_m_Panel-1499086885163-content-sap_m_ScrollContainer-1-content-build_simple_Table-1" width="100%" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" items="{/T2Set}">
+                                        <m:infoToolbar>
+                                            <m:Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                                <m:content>
+                                                    <m:Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:content>
+                                            </m:Toolbar>
+                                        </m:infoToolbar>
+                                        <m:headerToolbar/>
+                                        <m:columns>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Period Description" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Clrng doc." width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Payments Amount" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Clearing Date" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Net Due Date" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Days" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                        </m:columns>
+                                        <m:items>
+                                            <m:ColumnListItem type="Active">
+                                                <m:cells>
+                                                    <m:ObjectIdentifier title="" text="{PeriodDiscription}" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="" text="{Clrng}" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="{path: 'PaymentsAmmount', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" text="" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="{path: 'ClearDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" text="" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="{path: 'DueDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" text="" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="{Days}" text="" titleActive="false" visible="true"/>
+                                                </m:cells>
+                                            </m:ColumnListItem>
+                                        </m:items>
+                                    </m:Table>
+                                </m:content>
+                            </m:ScrollContainer>
+                        </m:content>
+                    </m:Panel>
+                    <m:Panel height="auto" width="100%" headerText="Discount" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                        <m:content>
+                            <m:ScrollContainer horizontal="true" vertical="true" width="100%" height="auto" visible="true">
+                                <m:content>
+                                    <m:Table id="sap_Responsive_Page_0-content-sap_m_Panel-1499086666324-content-sap_m_Panel-1499086861388-content-sap_m_ScrollContainer-1-content-build_simple_Table-1" width="100%" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" items="{/t3Set}">
+                                        <m:infoToolbar>
+                                            <m:Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                                <m:content>
+                                                    <m:Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:content>
+                                            </m:Toolbar>
+                                        </m:infoToolbar>
+                                        <m:headerToolbar/>
+                                        <m:columns>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Period Description" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Clrng doc." width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Discount Percentage" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                            <m:Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <m:header>
+                                                    <m:Text text="Sales Discount" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                                </m:header>
+                                                <m:footer/>
+                                            </m:Column>
+                                        </m:columns>
+                                        <m:items>
+                                            <m:ColumnListItem type="Active">
+                                                <m:cells>
+                                                    <m:ObjectIdentifier title="" text="{PeriodDiscription}" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="" text="{ClrngDoc}" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="" text="{path: 'DiscountPerc', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" titleActive="false" visible="true"/>
+                                                    <m:ObjectIdentifier title="" text="{path: 'SalesDiscount', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" titleActive="false" visible="true"/>
+                                                </m:cells>
+                                            </m:ColumnListItem>
+                                        </m:items>
+                                    </m:Table>
+                                </m:content>
+                            </m:ScrollContainer>
+                        </m:content>
+                    </m:Panel>
+                </m:content>
+            </m:Panel>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft>
+                    <m:Button text="Back" type="Back" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress7"/>
+                </m:contentLeft>
+                <m:contentMiddle/>
+                <m:contentRight/>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

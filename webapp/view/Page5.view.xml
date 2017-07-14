@@ -1,0 +1,43 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.Page5" xmlns:m="sap.m" xmlns:chart="sap.chart" xmlns:data="sap.chart.data">
+    <m:Page showHeader="true" title="Graphs" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <m:Panel height="auto" width="100%" headerText="Payments History" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Transparent">
+                <m:content>
+                    <chart:Chart id="sap_Responsive_Page_0-content-sap_m_Panel-1500017631983-content-sap_chart_ColumnChart-1500017645865" width="100%" visibleDimensions="PDescryption" visibleMeasures="Days" chartType="column" isAnalytical="false" selectionMode="Single" uiConfig="{}" vizProperties="{plotArea:{dataLabel:{visible: true,hideWhenOverlap:true}}}">
+                        <chart:dimensions>
+                            <data:Dimension name="PDescryption" label="Periods (Months)" role="series"/>
+                        </chart:dimensions>
+                        <chart:measures>
+                            <data:Measure name="Days" label="Payment (Early/Late)" role="axis2"/>
+                        </chart:measures>
+                    </chart:Chart>
+                </m:content>
+            </m:Panel>
+            <m:Panel height="auto" width="100%" headerText="Payments &amp; Discounts" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                <m:content>
+                    <chart:Chart id="sap_Responsive_Page_0-content-sap_m_Panel-1500017963248-content-sap_chart_StackedColumnChart-1500017988237" width="100%" visibleDimensions="PDescryption" visibleMeasures="paycalcu,Payment" chartType="stacked_column" isAnalytical="false" selectionMode="Single" uiConfig="{}" vizProperties="{plotArea:{dataLabel:{visible: true,hideWhenOverlap:true}}}">
+                        <chart:dimensions>
+                            <data:Dimension name="PDescryption" label="Month" role="category"/>
+                        </chart:dimensions>
+                        <chart:measures>
+                            <data:Measure name="paycalcu" label="Discount Ammount" role="axis2"/>
+                            <data:Measure name="Payment" label="Payment Ammount" role="axis3"/>
+                        </chart:measures>
+                    </chart:Chart>
+                </m:content>
+            </m:Panel>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft>
+                    <m:Button text="Back" type="Back" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                </m:contentLeft>
+                <m:contentMiddle/>
+                <m:contentRight/>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

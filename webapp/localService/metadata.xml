@@ -1,0 +1,217 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="f50c9bb8fc1d9e300e1d0e7d" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="f50c9bb8fc1d9e300e1d0e7d_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="ConnectorSet" EntityType="f50c9bb8fc1d9e300e1d0e7d.Connector" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="ConnectorclrdocT1" Association="f50c9bb8fc1d9e300e1d0e7d.ConnectorclrdocT1" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="ConnectorSet" Role="FromRole_ConnectorclrdocT1"/>
+                    <End EntitySet="T1Set" Role="ToRole_ConnectorclrdocT1"/>
+                </AssociationSet>
+                <AssociationSet Name="Connectorclrdoc2T2" Association="f50c9bb8fc1d9e300e1d0e7d.Connectorclrdoc2T2" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="ConnectorSet" Role="FromRole_Connectorclrdoc2T2"/>
+                    <End EntitySet="T2Set" Role="ToRole_Connectorclrdoc2T2"/>
+                </AssociationSet>
+                <AssociationSet Name="Connectord6t3" Association="f50c9bb8fc1d9e300e1d0e7d.Connectord6t3" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="ConnectorSet" Role="FromRole_Connectord6t3"/>
+                    <End EntitySet="t3Set" Role="ToRole_Connectord6t3"/>
+                </AssociationSet>
+                <AssociationSet Name="Connectorcllisty" Association="f50c9bb8fc1d9e300e1d0e7d.Connectorcllisty" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="ConnectorSet" Role="FromRole_Connectorcllisty"/>
+                    <End EntitySet="listySet" Role="ToRole_Connectorcllisty"/>
+                </AssociationSet>
+                <EntitySet Name="T1Set" EntityType="f50c9bb8fc1d9e300e1d0e7d.T1" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="T1d3Connector" Association="f50c9bb8fc1d9e300e1d0e7d.T1d3Connector" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="T1Set" Role="FromRole_T1d3Connector"/>
+                    <End EntitySet="ConnectorSet" Role="ToRole_T1d3Connector"/>
+                </AssociationSet>
+                <EntitySet Name="T2Set" EntityType="f50c9bb8fc1d9e300e1d0e7d.T2" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="T2dataConnector" Association="f50c9bb8fc1d9e300e1d0e7d.T2dataConnector" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="T2Set" Role="FromRole_T2dataConnector"/>
+                    <End EntitySet="ConnectorSet" Role="ToRole_T2dataConnector"/>
+                </AssociationSet>
+                <EntitySet Name="t3Set" EntityType="f50c9bb8fc1d9e300e1d0e7d.t3" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="t3d5Connector" Association="f50c9bb8fc1d9e300e1d0e7d.t3d5Connector" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="t3Set" Role="FromRole_t3d5Connector"/>
+                    <End EntitySet="ConnectorSet" Role="ToRole_t3d5Connector"/>
+                </AssociationSet>
+                <EntitySet Name="listySet" EntityType="f50c9bb8fc1d9e300e1d0e7d.listy" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="listylcConnector" Association="f50c9bb8fc1d9e300e1d0e7d.listylcConnector" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="listySet" Role="FromRole_listylcConnector"/>
+                    <End EntitySet="ConnectorSet" Role="ToRole_listylcConnector"/>
+                </AssociationSet>
+            </EntityContainer>
+            <EntityType Name="Connector">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="clrdocn" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+                <Property Name="___FK_f56308581208d9d20e2a204a" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_f56308581208d9d20e2a204a"/>
+                <Property Name="___FK_108790eb1855063a0e2a2058" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_108790eb1855063a0e2a2058"/>
+                <Property Name="___FK_f64fa1f1eb0cb7df0e2a2071" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_f64fa1f1eb0cb7df0e2a2071"/>
+                <Property Name="___FK_1ccc1b810b1f221a0e2a49d6" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_1ccc1b810b1f221a0e2a49d6"/>
+                <NavigationProperty Name="clrdoc" Relationship="f50c9bb8fc1d9e300e1d0e7d.ConnectorclrdocT1" FromRole="FromRole_ConnectorclrdocT1" ToRole="ToRole_ConnectorclrdocT1"/>
+                <NavigationProperty Name="clrdoc2" Relationship="f50c9bb8fc1d9e300e1d0e7d.Connectorclrdoc2T2" FromRole="FromRole_Connectorclrdoc2T2" ToRole="ToRole_Connectorclrdoc2T2"/>
+                <NavigationProperty Name="d6" Relationship="f50c9bb8fc1d9e300e1d0e7d.Connectord6t3" FromRole="FromRole_Connectord6t3" ToRole="ToRole_Connectord6t3"/>
+                <NavigationProperty Name="cl" Relationship="f50c9bb8fc1d9e300e1d0e7d.Connectorcllisty" FromRole="FromRole_Connectorcllisty" ToRole="ToRole_Connectorcllisty"/>
+            </EntityType>
+            <Association Name="ConnectorclrdocT1">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="1" Role="FromRole_ConnectorclrdocT1"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.T1" Multiplicity="*" Role="ToRole_ConnectorclrdocT1"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_ConnectorclrdocT1">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_ConnectorclrdocT1">
+                        <PropertyRef Name="___FK_cb9e7d6e93098e6f0e2a2002"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Connectorclrdoc2T2">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="1" Role="FromRole_Connectorclrdoc2T2"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.T2" Multiplicity="*" Role="ToRole_Connectorclrdoc2T2"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Connectorclrdoc2T2">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Connectorclrdoc2T2">
+                        <PropertyRef Name="___FK_7186be8986f20fd10e2a2015"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Connectord6t3">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="1" Role="FromRole_Connectord6t3"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.t3" Multiplicity="*" Role="ToRole_Connectord6t3"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Connectord6t3">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Connectord6t3">
+                        <PropertyRef Name="___FK_38ac06e77a036ff60e2a2083"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Connectorcllisty">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="1" Role="FromRole_Connectorcllisty"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.listy" Multiplicity="*" Role="ToRole_Connectorcllisty"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Connectorcllisty">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Connectorcllisty">
+                        <PropertyRef Name="___FK_0b287e838b4de1d50e2a49e3"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="T1">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Period" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Period"/>
+                <Property Name="___FK_cb9e7d6e93098e6f0e2a2002" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:label="___FK_cb9e7d6e93098e6f0e2a2002"/>
+                <Property Name="PeriodDesc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+                <Property Name="ClrngDoc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName2"/>
+                <Property Name="SalesAm" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="SalesAm"/>
+                <Property Name="PaymentA" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PaymentA"/>
+                <Property Name="Days" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Days"/>
+                <NavigationProperty Name="d3" Relationship="f50c9bb8fc1d9e300e1d0e7d.T1d3Connector" FromRole="FromRole_T1d3Connector" ToRole="ToRole_T1d3Connector"/>
+            </EntityType>
+            <Association Name="T1d3Connector">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.T1" Multiplicity="1" Role="FromRole_T1d3Connector"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="*" Role="ToRole_T1d3Connector"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_T1d3Connector">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_T1d3Connector">
+                        <PropertyRef Name="___FK_108790eb1855063a0e2a2058"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="T2">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="___FK_7186be8986f20fd10e2a2015" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_7186be8986f20fd10e2a2015"/>
+                <Property Name="Period" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Period"/>
+                <Property Name="PeriodDiscription" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PeriodDiscription"/>
+                <Property Name="Clrng" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Clrng"/>
+                <Property Name="PaymentsAmmount" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PaymentsAmmount"/>
+                <Property Name="ClearDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="ClearDate"/>
+                <Property Name="DueDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="DueDate"/>
+                <Property Name="Days" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Days"/>
+                <NavigationProperty Name="data" Relationship="f50c9bb8fc1d9e300e1d0e7d.T2dataConnector" FromRole="FromRole_T2dataConnector" ToRole="ToRole_T2dataConnector"/>
+            </EntityType>
+            <Association Name="T2dataConnector">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.T2" Multiplicity="1" Role="FromRole_T2dataConnector"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="*" Role="ToRole_T2dataConnector"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_T2dataConnector">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_T2dataConnector">
+                        <PropertyRef Name="___FK_f56308581208d9d20e2a204a"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="t3">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="___FK_38ac06e77a036ff60e2a2083" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_38ac06e77a036ff60e2a2083"/>
+                <Property Name="Period" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Period"/>
+                <Property Name="PeriodDiscription" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PeriodDiscription"/>
+                <Property Name="ClrngDoc" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ClrngDoc"/>
+                <Property Name="DiscountPerc" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DiscountPerc"/>
+                <Property Name="SalesDiscount" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="SalesDiscount"/>
+                <NavigationProperty Name="d5" Relationship="f50c9bb8fc1d9e300e1d0e7d.t3d5Connector" FromRole="FromRole_t3d5Connector" ToRole="ToRole_t3d5Connector"/>
+            </EntityType>
+            <Association Name="t3d5Connector">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.t3" Multiplicity="1" Role="FromRole_t3d5Connector"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="*" Role="ToRole_t3d5Connector"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_t3d5Connector">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_t3d5Connector">
+                        <PropertyRef Name="___FK_f64fa1f1eb0cb7df0e2a2071"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="listy">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Period" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+                <Property Name="clrdocno" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="clrdocno"/>
+                <Property Name="cleardate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="cleardate"/>
+                <Property Name="salesA" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="salesA"/>
+                <Property Name="discountPerc" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="discountPerc"/>
+                <Property Name="Discount" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Discount"/>
+                <Property Name="Payment" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Payment"/>
+                <Property Name="DueDate" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="DueDate"/>
+                <Property Name="PDescryption" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PDescryption"/>
+                <Property Name="Days" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Days"/>
+                <Property Name="___FK_0b287e838b4de1d50e2a49e3" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_0b287e838b4de1d50e2a49e3"/>
+                <Property Name="paycalcu" Type="Edm.Decimal" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;-\&quot;,\&quot;name\&quot;:\&quot;minus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;listy\&quot;,\&quot;entityId\&quot;:\&quot;listy\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;salesA\&quot;,\&quot;propertyId\&quot;:\&quot;salesA\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;propertyType\&quot;:\&quot;Decimal\&quot;,\&quot;isNewLine\&quot;:false,\&quot;id\&quot;:0,\&quot;computedType\&quot;:\&quot;number\&quot;}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;listy\&quot;,\&quot;entityId\&quot;:\&quot;listy\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;Payment\&quot;,\&quot;propertyId\&quot;:\&quot;Payment\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;propertyType\&quot;:\&quot;Decimal\&quot;,\&quot;isNewLine\&quot;:false,\&quot;id\&quot;:2,\&quot;computedType\&quot;:\&quot;number\&quot;}],\&quot;displayLabel\&quot;:\&quot;-\&quot;,\&quot;isNewLine\&quot;:false,\&quot;id\&quot;:1,\&quot;computedType\&quot;:\&quot;number\&quot;}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;listy&quot;,&quot;propertyId&quot;:&quot;salesA&quot;,&quot;_id&quot;:&quot;596778cf6b43f03f4d0939f5&quot;},{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;listy&quot;,&quot;propertyId&quot;:&quot;Payment&quot;,&quot;_id&quot;:&quot;596778cf6b43f03f4d0939f4&quot;}]}" sap:label="paycalcu"/>
+                <NavigationProperty Name="lc" Relationship="f50c9bb8fc1d9e300e1d0e7d.listylcConnector" FromRole="FromRole_listylcConnector" ToRole="ToRole_listylcConnector"/>
+            </EntityType>
+            <Association Name="listylcConnector">
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.listy" Multiplicity="1" Role="FromRole_listylcConnector"/>
+                <End Type="f50c9bb8fc1d9e300e1d0e7d.Connector" Multiplicity="*" Role="ToRole_listylcConnector"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_listylcConnector">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_listylcConnector">
+                        <PropertyRef Name="___FK_1ccc1b810b1f221a0e2a49d6"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
