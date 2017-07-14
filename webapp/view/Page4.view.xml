@@ -1,0 +1,52 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.Page4" xmlns:m="sap.m">
+    <m:Page showHeader="true" title="Customer Trading History" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <m:List mode="None" width="100%" headerText="" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" items="{/listySet}">
+                <m:infoToolbar>
+                    <m:Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <m:content>
+                            <m:Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                        </m:content>
+                    </m:Toolbar>
+                </m:infoToolbar>
+                <m:headerToolbar>
+                    <m:Toolbar visible="true" enabled="true" width="" design="Solid">
+                        <m:content>
+                            <m:SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+                        </m:content>
+                    </m:Toolbar>
+                </m:headerToolbar>
+                <m:items>
+                    <m:ObjectListItem intro="{PDescryption}" title="{clrdocno}" icon="sap-icon://payment-approval" number="{path: 'salesA', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" numberUnit="{path: 'Payment', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" numberState="None" type="Active" selected="true" showMarkers="false">
+                        <m:attributes>
+                            <m:ObjectAttribute title="{path: 'DueDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" text="Due Date" active="false"/>
+                            <m:ObjectAttribute title="{path: 'cleardate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" text="Date Cleared" active="false"/>
+                        </m:attributes>
+                        <m:firstStatus>
+                            <m:ObjectStatus title="{path: 'discountPerc', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" text="Discount Percentage" state="None"/>
+                        </m:firstStatus>
+                        <m:secondStatus>
+                            <m:ObjectStatus title="{path: 'paycalcu', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" text="Discounted Ammount" state="None"/>
+                        </m:secondStatus>
+                    </m:ObjectListItem>
+                </m:items>
+            </m:List>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft>
+                    <m:Button text="Advanced" type="Emphasized" icon="sap-icon://course-program" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress2"/>
+                </m:contentLeft>
+                <m:contentMiddle>
+                    <m:Button text="Graph" type="Accept" icon="sap-icon://vertical-bar-chart-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:contentMiddle>
+                <m:contentRight>
+                    <m:Button text="Back" type="Up" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress3"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>
