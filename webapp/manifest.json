@@ -1,0 +1,177 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "generate.app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"main": {
+				"uri": "/here/goes/your/serviceUrl/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.2.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "generated.app.view.Page5",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.32.0",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "main",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"loadMetadataAsync": false,
+					"json": true,
+					"bJSON": true,
+					"defaultBindingMode": "TwoWay",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"disableHeadRequestForToken": true
+				}
+			}
+		},
+		"resources": {
+			"css": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "generated.app.view",
+				"controlId": "App",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"page_1"
+					]
+				}
+			},
+			"targets": {
+				"page_1": {
+					"controlAggregation": "pages",
+					"viewName": "page_1",
+					"viewId": "page_1",
+					"viewLevel": 1,
+					"transition": "slide"
+				},
+				"Page4": {
+					"controlAggregation": "pages",
+					"viewName": "Page4",
+					"viewId": "Page4",
+					"viewLevel": 2,
+					"transition": "slide"
+				},
+				"page_2": {
+					"controlAggregation": "pages",
+					"viewName": "page_2",
+					"viewId": "page_2",
+					"viewLevel": 4,
+					"transition": "slide"
+				},
+				"Page5": {
+					"controlAggregation": "pages",
+					"viewName": "Page5",
+					"viewId": "Page5",
+					"viewLevel": 3,
+					"transition": "slide"
+				}
+			},
+			"routes": [
+				{
+					"pattern": "page_1/:context:",
+					"name": "page_1",
+					"target": [
+						"page_1"
+					]
+				},
+				{
+					"pattern": "",
+					"name": "default",
+					"target": [
+						"page_1"
+					]
+				},
+				{
+					"pattern": "Page4/:context:",
+					"name": "Page4",
+					"target": [
+						"Page4"
+					]
+				},
+				{
+					"pattern": "page_2/:context:",
+					"name": "page_2",
+					"target": [
+						"page_2"
+					]
+				},
+				{
+					"pattern": "Page5/:context:",
+					"name": "Page5",
+					"target": [
+						"Page5"
+					]
+				}
+			]
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

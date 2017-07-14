@@ -1,0 +1,21 @@
+{
+  "hcpdeploy": {
+    "account": "aa9642169",
+    "name": "zcreditanalysis",
+    "lastVersionWeTriedToDeploy": "1.2"
+  },
+  "mockpreview": {
+    "mockUri": "/here/goes/your/serviceUrl/",
+    "metadataFilePath": "localService/metadata.xml",
+    "mockRequestsFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  }
+}

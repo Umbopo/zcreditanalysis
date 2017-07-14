@@ -1,0 +1,47 @@
+{
+  "run": [
+    {
+      "filePath": "/webapp/test/testFLPService.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "id": 7938418,
+        "runnerId": "webapprunner",
+        "displayName": "Run testFLPService.html",
+        "lastRunTimeStamp": 1500028468912
+      }
+    },
+    {
+      "filePath": "/webapp/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "1.38.5",
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": ""
+        }
+      ],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "id": 1617441,
+        "runnerId": "fiorirunner",
+        "displayName": "Run Component.js",
+        "lastRunTimeStamp": 1500028433224
+      }
+    }
+  ],
+  "hybrid": {
+    "dirty": true
+  }
+}
